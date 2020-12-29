@@ -1,0 +1,17 @@
+Type: Compendium
+Package: T2_seqs
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.1
+Authors@R: 
+    person(given = "First",
+           family = "Last",
+           role = c("aut", "cre"),
+           email = "first.last@example.com")
+Description: Pràctiques del tema 2. Anàlisi de seqüències.
+License: What license it uses
+Depends: 
+    holepunch
+Remotes: 
+    karthik/holepunch
+Encoding: UTF-8
+LazyData: true
