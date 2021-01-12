@@ -1,0 +1,36 @@
+# ERR4423464_1.fastq, ERR4423464_2.fastq
+
+Aquests són els arxius fastq de lectures aparellades procedents de la
+seqüenciació d'una mostra de SARS-Cov-2 amb MiSeq, d'Illumina. Els arxius
+han estat generats amb els comandaments següent:
+
+fastq-dump --split-spot \
+           --skip-technical \
+           --clip \
+           --qual-filter-1 \
+           --accession ERR4423464 \
+           --split-files
+
+sickle pe -t sanger \
+          -f ERR4423464_1.fastq \
+          -r ERR4423464_2.fastq \
+          -o z1.fq \
+          -p z2.fq \
+          -s z3.fq \
+          -l 80
+
+mv z1.fq ERR4423464_1.fastq
+mv z2.fq ERR4423464_2.fastq
+rm z3.fq
+
+El programa sickle, descarregat de https://github.com/ucdavis-bioinformatics/sickle/
+permet filtrar seqüències aparellades, mantenint els parells filtrats en ordre.
+
+# referencia.fna
+
+Aquest arxiu és el genoma de referència del coronavirus SARS-Cov-2.
+Va ser descarregat de l'NCBI el 12 de gener de 2021. Vegeu:
+
+https://www.ncbi.nlm.nih.gov/nuccore/NC_045512
+
+
