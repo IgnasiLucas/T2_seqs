@@ -1,8 +1,7 @@
-if (!requireNamespace("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
-BiocManager::install()
-BiocManager::install('ShortRead')
-BiocManager::install('Rbowtie2')
-BiocManager::install('Rsamtools')
-BiocManager::install('VariantTools')
-BiocManager::install('gmapR')
+if (!requireNamespace('BiocManager', quietly = TRUE))
+    install.packages('BiocManager')
+BiocManager::install(c('ShortRead',
+                       'Rbowtie2',
+                       'Rsamtools',
+                       'VariantTools',
+                       'gmapR'))
