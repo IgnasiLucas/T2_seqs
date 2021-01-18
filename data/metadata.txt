@@ -36,4 +36,7 @@ Va ser descarregat de l'NCBI el 12 de gener de 2021. Vegeu:
 
 https://www.ncbi.nlm.nih.gov/nuccore/NC_045512
 
+# gmap.tar.gz
 
+Aquest és l'índex del genoma de referència per fer-lo servir amb el paquet gmapR. 
+Ha estat generat localment perquè a MyBinder no hi havia prou RAM.

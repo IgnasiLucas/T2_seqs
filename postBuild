@@ -1,0 +1,5 @@
+#!/bin/bash
+set -ex
+wget -O data.tar.gz "https://nuvol.uv.es/owncloud/index.php/s/S7ukqg5gq9ki0hf"
+tar -xzf data.tar.gz
+rm data.tar.gz
