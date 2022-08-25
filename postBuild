@@ -1,5 +1,6 @@
 #!/bin/bash
 set -ex
 wget -O data.tar.gz "https://nuvol.uv.es/owncloud/index.php/s/S7ukqg5gq9ki0hf/download"
+# Dades en ownCloud/Bioinformatica_BT/data.tar.gz, i en local
 tar -xzf data.tar.gz
 rm data.tar.gz
